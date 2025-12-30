@@ -34,6 +34,13 @@ const formsByStatus = {
     { number: 'I-751', name: 'Petition to Remove Conditions on Residence', url: 'https://www.uscis.gov/i-751' },
     { number: 'I-765', name: 'Application for Employment Authorization', url: 'https://www.uscis.gov/i-765' }
   ],
+  chnv: [
+    { number: 'I-589', name: 'Application for Asylum', url: 'https://www.uscis.gov/i-589' },
+    { number: 'I-130', name: 'Petition for Alien Relative', url: 'https://www.uscis.gov/i-130' },
+    { number: 'I-485', name: 'Application to Register Permanent Residence', url: 'https://www.uscis.gov/i-485' },
+    { number: 'I-765', name: 'Application for Employment Authorization', url: 'https://www.uscis.gov/i-765' },
+    { number: 'I-918', name: 'Petition for U Nonimmigrant Status', url: 'https://www.uscis.gov/i-918' }
+  ],
   asylum: [
     { number: 'I-589', name: 'Application for Asylum', url: 'https://www.uscis.gov/i-589' },
     { number: 'I-765', name: 'Application for Employment Authorization', url: 'https://www.uscis.gov/i-765' },
@@ -69,7 +76,8 @@ const formsTranslations = {
     'Petition for Alien Relative': 'Petition for Alien Relative',
     'Application for Travel Document': 'Application for Travel Document',
     'Affidavit of Support': 'Affidavit of Support',
-    'Petition for Alien Fiancé(e)': 'Petition for Alien Fiancé(e)'
+    'Petition for Alien Fiancé(e)': 'Petition for Alien Fiancé(e)',
+    'Petition for U Nonimmigrant Status': 'Petition for U Nonimmigrant Status (Crime Victims)'
   },
   ht: {
     'Application for Asylum': 'Aplikasyon pou Azil',
@@ -86,7 +94,8 @@ const formsTranslations = {
     'Petition for Alien Relative': 'Petisyon pou Fanmi Etranje',
     'Application for Travel Document': 'Aplikasyon pou Dokiman Vwayaj',
     'Affidavit of Support': 'Afidavi Sipò',
-    'Petition for Alien Fiancé(e)': 'Petisyon pou Fiyanse Etranje'
+    'Petition for Alien Fiancé(e)': 'Petisyon pou Fiyanse Etranje',
+    'Petition for U Nonimmigrant Status': 'Petisyon pou Estati U Nonimigran (Viktim Krim)'
   }
 }
 

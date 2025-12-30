@@ -131,8 +131,13 @@ function App() {
 
       <footer className="app-footer">
         <p>{t('disclaimer')}</p>
+        <p className="last-updated">
+          {language === 'en'
+            ? 'Last updated: December 30, 2025'
+            : 'Dènye mizajou: 30 Desanm 2025'}
+        </p>
         <p className="footer-links">
-          <button 
+          <button
             className="footer-link"
             onClick={() => window.print()}
           >

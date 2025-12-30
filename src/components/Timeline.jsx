@@ -112,6 +112,24 @@ const timelineData = {
       { step: 'Sitwayènte', time: '5 ane apre kat vèt', description: 'Aplike pou natiralizasyon (N-400) apre 5 ane kòm rezidan pèmanan. Tretman aktyèl: 6.1 mwa.', critical: false }
     ]
   },
+  chnv: {
+    en: [
+      { step: '🚨 PROGRAM TERMINATED', time: 'IMMEDIATE ACTION NEEDED', description: 'CHNV parole has been terminated. DHS began sending termination notices June 12, 2025. Your parole and work authorization are REVOKED. Act NOW.', critical: true },
+      { step: 'Get Legal Help', time: 'This Week', description: 'Find an immigration attorney immediately. Free help at justice.gov/eoir/find-legal-representation. Time is critical.', critical: true },
+      { step: 'Evaluate Asylum Option', time: 'Within 1 year of entry', description: 'If you fear persecution in Haiti, file I-589 immediately. Note: Haiti is now a "significant negative factor" - strong evidence required.', critical: true },
+      { step: 'Family Petition Option', time: 'File ASAP', description: 'If you have US citizen immediate relatives (spouse, parent, adult child), they can file I-130 petition immediately.', critical: false },
+      { step: 'Document Everything', time: 'Ongoing', description: 'Keep all parole documents, I-94, employment records, bills, and proof of presence. This evidence is critical.', critical: false },
+      { step: 'Know Your Rights', time: 'Always', description: 'Right to remain silent. Right to attorney. Do not sign documents you don\'t understand. Do not open door without warrant.', critical: true }
+    ],
+    ht: [
+      { step: '🚨 PWOGRAM FINI', time: 'AKSYON IMEDYAT NESESÈ', description: 'Parole CHNV te fini. DHS te kòmanse voye avi revokasyon 12 Jen 2025. Parole ak otorizasyon travay ou REVOKE. Aji KOUNYE A.', critical: true },
+      { step: 'Jwenn Èd Legal', time: 'Semèn Sa', description: 'Jwenn yon avoka imigrasyon imedyatman. Èd gratis nan justice.gov/eoir/find-legal-representation. Tan kritik.', critical: true },
+      { step: 'Evalye Opsyon Azil', time: 'Nan 1 ane apre antre', description: 'Si ou pè pèsekisyon nan Ayiti, depoze I-589 imedyatman. Remak: Ayiti kounye a se yon "faktè negatif siyifikatif" - prèv solid obligatwa.', critical: true },
+      { step: 'Opsyon Petisyon Fanmi', time: 'Depoze pi vit posib', description: 'Si ou gen fanmi imedya sitwayen ameriken (mari/madanm, paran, pitit adilt), yo ka depoze petisyon I-130 imedyatman.', critical: false },
+      { step: 'Dokimante Tout Bagay', time: 'Kontinyèl', description: 'Kenbe tout dokiman parole, I-94, dosye travay, fakti, ak prèv prezans. Prèv sa a kritik.', critical: false },
+      { step: 'Konnen Dwa Ou', time: 'Toujou', description: 'Dwa pou rete an silans. Dwa a avoka. Pa siyen dokiman ou pa konprann. Pa louvri pòt san manda.', critical: true }
+    ]
+  },
   family: {
     en: [
       { step: 'Determine Your Category', time: 'Immediately', description: 'Immediate relatives (spouse, parent, unmarried child under 21 of US citizen) have NO wait. Others have visa backlogs of 2-20+ years.', critical: true },

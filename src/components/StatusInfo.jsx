@@ -12,7 +12,7 @@ const statusData = {
           description: 'CRITICAL: TPS for Haiti is being TERMINATED. Benefits end February 3, 2026. If you arrived before June 3, 2024 and were continuously present since August 4, 2024, you may still apply, but this protection will end.',
           eligibility: 'Must have been continuously residing in the US since June 3, 2024, and continuously present since August 4, 2024',
           timeline: 'Applications accepted until Feb 3, 2026, but program is ending',
-          cost: '$50 application + $85 biometrics + $410 EAD (fee waivers available)'
+          cost: '$500 application + $30 biometrics + $410 EAD (H.R. 1 increased fee - cannot be waived)'
         },
         {
           title: 'Asylum',
@@ -62,7 +62,7 @@ const statusData = {
           description: 'KRITIK: TPS pou Ayiti ap FINI. Benefis yo fini 3 Fevriye 2026. Si ou te rive anvan 3 Jen 2024 epi ou te prezan kontinyèlman depi 4 Out 2024, ou ka toujou aplike, men pwoteksyon sa a ap fini.',
           eligibility: 'Dwe te rete kontinyèlman nan Etazini depi 3 Jen 2024, epi prezan kontinyèlman depi 4 Out 2024',
           timeline: 'Aplikasyon aksepte jiska 3 Fev 2026, men pwogram nan ap fini',
-          cost: '$50 aplikasyon + $85 biyometrik + $410 EAD (dispans frè disponib)'
+          cost: '$500 aplikasyon + $30 biyometrik + $410 EAD (H.R. 1 ogmante frè - pa ka anile)'
         },
         {
           title: 'Azil',
@@ -121,7 +121,7 @@ const statusData = {
           description: 'CRITICAL: TPS for Haiti is being TERMINATED on February 3, 2026. Even if you qualify, this is ending.',
           eligibility: 'Must have been continuously residing in US since June 3, 2024, and continuously present since August 4, 2024',
           timeline: 'Program ends Feb 3, 2026',
-          cost: '$50 application + $85 biometrics + $410 EAD'
+          cost: '$500 application + $30 biometrics + $410 EAD (H.R. 1 fee - cannot be waived)'
         },
         {
           title: 'Asylum (if eligible)',
@@ -170,7 +170,7 @@ const statusData = {
           description: 'KRITIK: TPS pou Ayiti ap FINI 3 Fevriye 2026. Menm si ou kalifye, sa a ap fini.',
           eligibility: 'Dwe te rete kontinyèlman nan Etazini depi 3 Jen 2024, epi prezan kontinyèlman depi 4 Out 2024',
           timeline: 'Pwogram fini 3 Fev 2026',
-          cost: '$50 aplikasyon + $85 biyometrik + $410 EAD'
+          cost: '$500 aplikasyon + $30 biyometrik + $410 EAD (frè H.R. 1 - pa ka anile)'
         },
         {
           title: 'Azil (si elijib)',
@@ -668,6 +668,128 @@ const statusData = {
       haitiSpecific: '⚠️ TPS AYITI AP FINI 3 FEVRIYE 2026. Sekretè Sekirite Nasyonal Kristi Noem te mete fen nan TPS pou Ayiti. EAD yo valab jiska 3 Fev 2026 men yo pa pral pwolonje ankò. Ou dwe jwenn estati legal altènatif oswa fè fas a pwosedi retire apre dat sa a.'
     }
   },
+  chnv: {
+    en: {
+      whatThisMeans: 'You entered the United States through the CHNV (Cuba, Haiti, Nicaragua, Venezuela) Humanitarian Parole program with a US-based sponsor. This program allowed 2 years of parole status with work authorization.',
+      criticalWarning: '🚨 URGENT: THE CHNV PROGRAM HAS BEEN TERMINATED. On June 12, 2025, DHS began sending termination notices to approximately 530,000 individuals. Your parole status and work authorization have been REVOKED IMMEDIATELY. You must seek alternative legal status NOW or face removal proceedings.',
+      availableOptions: [
+        {
+          title: 'Asylum Application (URGENT)',
+          description: 'If you fear persecution in Haiti based on race, religion, nationality, political opinion, or membership in a particular social group, apply for asylum IMMEDIATELY.',
+          eligibility: 'Must demonstrate well-founded fear of persecution. Being from Haiti is now considered a "significant negative factor" by USCIS - strong evidence required.',
+          timeline: 'File as soon as possible. The 1-year deadline from your entry date still applies.',
+          cost: '$100 filing fee (cannot be waived under H.R. 1)'
+        },
+        {
+          title: 'Family-Based Immigration',
+          description: 'If you have immediate relatives who are US citizens (spouse, parent, or adult child over 21), they can petition for you.',
+          eligibility: 'Immediate relatives of US citizens have no visa wait. Other family categories face multi-year backlogs.',
+          timeline: 'Immediate relatives: 10-23 months. File I-130 petition immediately to establish priority date.',
+          cost: '$535 (I-130) + $1,225 (I-485) + fees'
+        },
+        {
+          title: 'Employment-Based Sponsorship',
+          description: 'If you have specialized skills or a job offer, your employer may be able to sponsor you for a work visa or green card.',
+          eligibility: 'Requires employer willing to sponsor. H-1B requires specialty occupation and bachelor\'s degree.',
+          timeline: 'H-1B lottery in March. Employment green card: 2-10+ years depending on category.',
+          cost: 'Employer typically pays filing fees'
+        },
+        {
+          title: 'U-Visa (Crime Victim)',
+          description: 'If you were a victim of certain crimes in the US and helped law enforcement, you may qualify.',
+          eligibility: 'Must be victim of qualifying crime, suffered mental/physical abuse, have information about the crime, and law enforcement must certify cooperation.',
+          timeline: 'Currently 5+ year backlog. Provides work permit while pending.',
+          cost: 'No filing fee'
+        },
+        {
+          title: 'VAWA (Violence Against Women Act)',
+          description: 'If you experienced domestic violence from a US citizen or green card holder spouse/parent, you can self-petition.',
+          eligibility: 'Must prove battery or extreme cruelty by USC or LPR spouse/parent. Self-petition - abuser is not notified.',
+          timeline: '12-18 months for approval. Work permit available while pending.',
+          cost: 'No filing fee'
+        }
+      ],
+      stepByStep: [
+        { step: 1, action: 'GET LEGAL HELP IMMEDIATELY', details: 'Find an immigration attorney NOW. Free help at justice.gov/eoir/find-legal-representation or through AILA (American Immigration Lawyers Association).' },
+        { step: 2, action: 'Check your myUSCIS account', details: 'Look for any termination notices. Keep copies of everything. Document your presence in the US.' },
+        { step: 3, action: 'Do NOT leave the United States', details: 'Leaving will trigger bars to re-entry. Do not travel internationally without attorney advice.' },
+        { step: 4, action: 'Evaluate ALL options with attorney', details: 'Asylum, family petition, U-visa, VAWA, employment sponsorship - explore every possibility.' },
+        { step: 5, action: 'File applications IMMEDIATELY', details: 'If you qualify for asylum or family-based petition, file now to establish a record and potential work authorization.' },
+        { step: 6, action: 'Know your rights', details: 'Right to remain silent. Right to an attorney. Do not sign documents you don\'t understand. Do not open door without warrant.' }
+      ],
+      requirements: [
+        'All CHNV parole documents (I-94, approval notice)',
+        'Valid passport from Haiti',
+        'Birth certificate',
+        'Proof of continuous presence (bills, lease, employment records)',
+        'Any documents supporting asylum claim (evidence of persecution/threats)',
+        'Family documents (if applying through family)',
+        'Two passport photos (2x2 inches)',
+        'Police reports (if crime victim for U-visa)'
+      ],
+      haitiSpecific: '🚨 CHNV PROGRAM TERMINATED: The Supreme Court upheld DHS\'s termination on May 30, 2025. Work authorization revoked immediately. USCIS has stated that being from Haiti is a "significant negative factor" in immigration applications. This makes strong evidence and legal representation essential. Family Reunification Parole (HFRP) has also been terminated as of January 14, 2026.'
+    },
+    ht: {
+      whatThisMeans: 'Ou te antre Etazini atravè pwogram CHNV (Kiba, Ayiti, Nikaragwa, Venezuela) Humanitarian Parole avèk yon garanti ki baze nan Etazini. Pwogram sa a te pèmèt 2 ane estati parole avèk otorizasyon travay.',
+      criticalWarning: '🚨 IJAN: PWOGRAM CHNV TE FINI. Nan dat 12 Jen 2025, DHS te kòmanse voye avi revokasyon bay anviwon 530,000 moun. Estati parole ou ak otorizasyon travay ou te REVOKE IMEDYATMAN. Ou dwe chèche estati legal altènatif KOUNYE A oswa fè fas a pwosedi retire.',
+      availableOptions: [
+        {
+          title: 'Aplikasyon Azil (IJAN)',
+          description: 'Si ou pè pèsekisyon nan Ayiti ki baze sou ras, relijyon, nasyonalite, opinyon politik, oswa manm nan yon gwoup sosyal patikilye, aplike pou azil IMEDYATMAN.',
+          eligibility: 'Dwe demontre laperèz byen fonde pou pèsekisyon. Soti Ayiti kounye a konsidere kòm "faktè negatif siyifikatif" pa USCIS - prèv solid obligatwa.',
+          timeline: 'Depoze pi vit posib. Dat limit 1 ane apre dat antre ou toujou aplike.',
+          cost: '$100 frè depo (pa ka anile anba H.R. 1)'
+        },
+        {
+          title: 'Imigrasyon Ki Baze Sou Fanmi',
+          description: 'Si ou gen fanmi pwòch ki sitwayen ameriken (mari/madanm, paran, oswa pitit adilt ki gen plis pase 21 an), yo ka petisyone pou ou.',
+          eligibility: 'Fanmi imedya sitwayen ameriken pa gen tann viza. Lòt kategori fanmi fè fas a reta plizyè ane.',
+          timeline: 'Fanmi imedya: 10-23 mwa. Depoze petisyon I-130 imedyatman pou etabli dat priyorite.',
+          cost: '$535 (I-130) + $1,225 (I-485) + frè'
+        },
+        {
+          title: 'Patwonaj Ki Baze Sou Travay',
+          description: 'Si ou gen konpetans espesyalize oswa yon òf travay, anplwayè ou ka kapab patwone ou pou viza travay oswa kat vèt.',
+          eligibility: 'Mande anplwayè ki vle patwone. H-1B mande okipasyon espesyalite ak diplòm bakaloreya.',
+          timeline: 'Lotri H-1B nan Mas. Kat vèt anplwa: 2-10+ ane depann de kategori.',
+          cost: 'Anplwayè tipikman peye frè depo'
+        },
+        {
+          title: 'Viza U (Viktim Krim)',
+          description: 'Si ou te viktim sèten krim nan Etazini epi ou te ede lapolis, ou ka kalifye.',
+          eligibility: 'Dwe viktim krim ki kalifye, te soufri abi mantal/fizik, gen enfòmasyon sou krim nan, epi lapolis dwe sètifye kolaborasyon.',
+          timeline: 'Aktyèlman 5+ ane reta. Bay pèmi travay pandan ap tann.',
+          cost: 'Pa gen frè depo'
+        },
+        {
+          title: 'VAWA (Lwa Vyolans Kont Fanm)',
+          description: 'Si ou te fè eksperyans vyolans domestik nan men yon sitwayen ameriken oswa mari/madanm/paran ki gen kat vèt, ou ka oto-petisyone.',
+          eligibility: 'Dwe pwouve bat oswa krayolte ekstrèm pa mari/madanm/paran USC oswa LPR. Oto-petisyon - abizè a pa notifye.',
+          timeline: '12-18 mwa pou apwobasyon. Pèmi travay disponib pandan ap tann.',
+          cost: 'Pa gen frè depo'
+        }
+      ],
+      stepByStep: [
+        { step: 1, action: 'JWENN ÈD LEGAL IMEDYATMAN', details: 'Jwenn yon avoka imigrasyon KOUNYE A. Èd gratis nan justice.gov/eoir/find-legal-representation oswa atravè AILA (American Immigration Lawyers Association).' },
+        { step: 2, action: 'Tcheke kont myUSCIS ou', details: 'Gade pou nenpòt avi revokasyon. Kenbe kopi tout bagay. Dokimante prezans ou nan Etazini.' },
+        { step: 3, action: 'PA kite Etazini', details: 'Kite ap deklanche entèdiksyon pou re-antre. Pa vwayaje entènasyonal san konsèy avoka.' },
+        { step: 4, action: 'Evalye TOUT opsyon avèk avoka', details: 'Azil, petisyon fanmi, viza U, VAWA, patwonaj anplwa - eksplore chak posibilite.' },
+        { step: 5, action: 'Depoze aplikasyon IMEDYATMAN', details: 'Si ou kalifye pou azil oswa petisyon ki baze sou fanmi, depoze kounye a pou etabli yon dosye ak otorizasyon travay potansyèl.' },
+        { step: 6, action: 'Konnen dwa ou', details: 'Dwa pou rete an silans. Dwa a yon avoka. Pa siyen dokiman ou pa konprann. Pa louvri pòt san manda.' }
+      ],
+      requirements: [
+        'Tout dokiman CHNV parole (I-94, avi apwobasyon)',
+        'Paspo valab soti Ayiti',
+        'Batistè',
+        'Prèv prezans kontinyèl (fakti, lwaye, dosye travay)',
+        'Nenpòt dokiman ki sipòte reklamasyon azil (prèv pèsekisyon/menas)',
+        'Dokiman fanmi (si ap aplike atravè fanmi)',
+        'De foto paspo (2x2 pous)',
+        'Rapò lapolis (si viktim krim pou viza U)'
+      ],
+      haitiSpecific: '🚨 PWOGRAM CHNV FINI: Tribinal Siprèm te kenbe revokasyon DHS nan 30 Me 2025. Otorizasyon travay revoke imedyatman. USCIS te deklare ke soti Ayiti se yon "faktè negatif siyifikatif" nan aplikasyon imigrasyon. Sa fè prèv solid ak reprezantasyon legal esansyèl. Paròl Reunifikasyon Fanmi (HFRP) te fini tou nan dat 14 Janvye 2026.'
+    }
+  },
   asylum: {
     en: {
       whatThisMeans: 'You are seeking asylum or have been granted asylum/refugee status. Asylum provides protection to people who have suffered persecution or fear persecution in their home country based on race, religion, nationality, political opinion, or membership in a particular social group.',
@@ -931,7 +1053,7 @@ const statusData = {
           description: 'If you\'re from Haiti and meet residency requirements, you may apply - but TPS is ending Feb 3, 2026.',
           eligibility: 'Must have been in US since June 3, 2024 and present since Aug 4, 2024',
           timeline: 'Program ends Feb 3, 2026',
-          cost: '$50 + $85 biometrics + $410 EAD'
+          cost: '$500 + $30 biometrics + $410 EAD (H.R. 1 fee - cannot be waived)'
         },
         {
           title: 'Asylum',
@@ -996,7 +1118,7 @@ const statusData = {
           description: 'Si ou soti Ayiti epi ou satisfè egzijans rezidans, ou ka aplike - men TPS ap fini 3 Fev 2026.',
           eligibility: 'Dwe te nan Etazini depi 3 Jen 2024 epi prezan depi 4 Out 2024',
           timeline: 'Pwogram fini 3 Fev 2026',
-          cost: '$50 + $85 biyometrik + $410 EAD'
+          cost: '$500 + $30 biyometrik + $410 EAD (frè H.R. 1 - pa ka anile)'
         },
         {
           title: 'Azil',

@@ -8,6 +8,7 @@ const statusOptions = [
   { id: 'work', key: 'work' },
   { id: 'family', key: 'family' },
   { id: 'tps', key: 'tps' },
+  { id: 'chnv', key: 'chnv' },
   { id: 'asylum', key: 'asylum' },
   { id: 'greenCard', key: 'greenCard' },
   { id: 'other', key: 'other' }
@@ -33,6 +34,7 @@ function StatusAssessment({ setCurrentStatus, language, t }) {
               {option.id === 'work' && '💼'}
               {option.id === 'family' && '💒'}
               {option.id === 'tps' && '🛡️'}
+              {option.id === 'chnv' && '⚠️'}
               {option.id === 'asylum' && '🏠'}
               {option.id === 'greenCard' && '🪪'}
               {option.id === 'other' && '❓'}

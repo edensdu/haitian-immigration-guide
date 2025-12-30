@@ -60,16 +60,16 @@ const costData = {
   },
   tps: {
     en: {
-      applicationFee: 50,
-      biometricsFee: 85,
-      attorneyFee: 500,
-      description: 'TPS renewal'
+      applicationFee: 500,
+      biometricsFee: 30,
+      attorneyFee: 1500,
+      description: 'TPS application (H.R. 1 increased fee from $50 to $500 - cannot be waived)'
     },
     ht: {
-      applicationFee: 50,
-      biometricsFee: 85,
-      attorneyFee: 500,
-      description: 'Renouvleman TPS'
+      applicationFee: 500,
+      biometricsFee: 30,
+      attorneyFee: 1500,
+      description: 'Aplikasyon TPS (H.R. 1 ogmante frè soti $50 a $500 - pa ka anile)'
     }
   },
   asylum: {
@@ -98,6 +98,20 @@ const costData = {
       biometricsFee: 85,
       attorneyFee: 2500,
       description: 'Kat vèt ki baze sou fanmi (I-130 + I-485)'
+    }
+  },
+  chnv: {
+    en: {
+      applicationFee: 100,
+      biometricsFee: 85,
+      attorneyFee: 2500,
+      description: 'Asylum application (parole terminated - seek alternative status)'
+    },
+    ht: {
+      applicationFee: 100,
+      biometricsFee: 85,
+      attorneyFee: 2500,
+      description: 'Aplikasyon azil (parole fini - chèche estati altènatif)'
     }
   },
   greenCard: {

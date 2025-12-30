@@ -7,6 +7,7 @@ const documentLists = {
   student: ['passport', 'visa', 'i94', 'i20', 'photos', 'financialProof'],
   work: ['passport', 'visa', 'i94', 'workAuth', 'photos'],
   family: ['passport', 'birthCertificate', 'marriageCert', 'photos', 'financialProof', 'medicalExam', 'policeClearance'],
+  chnv: ['passport', 'i94', 'birthCertificate', 'photos', 'financialProof', 'asylumDoc', 'policeClearance'],
   tps: ['passport', 'tpsDoc', 'i94', 'photos', 'birthCertificate'],
   asylum: ['passport', 'asylumDoc', 'photos', 'birthCertificate', 'policeClearance'],
   greenCard: ['passport', 'greenCardDoc', 'birthCertificate', 'photos', 'taxReturns', 'marriageCert'],
