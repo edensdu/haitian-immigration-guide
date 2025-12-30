@@ -86,6 +86,20 @@ const costData = {
       description: 'Aplikasyon azil (nouvo frè $100 depi 2025)'
     }
   },
+  family: {
+    en: {
+      applicationFee: 1225,
+      biometricsFee: 85,
+      attorneyFee: 2500,
+      description: 'Family-based green card (I-130 + I-485)'
+    },
+    ht: {
+      applicationFee: 1225,
+      biometricsFee: 85,
+      attorneyFee: 2500,
+      description: 'Kat vèt ki baze sou fanmi (I-130 + I-485)'
+    }
+  },
   greenCard: {
     en: {
       applicationFee: 760,

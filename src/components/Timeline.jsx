@@ -112,6 +112,26 @@ const timelineData = {
       { step: 'Sitwayènte', time: '5 ane apre kat vèt', description: 'Aplike pou natiralizasyon (N-400) apre 5 ane kòm rezidan pèmanan. Tretman aktyèl: 6.1 mwa.', critical: false }
     ]
   },
+  family: {
+    en: [
+      { step: 'Determine Your Category', time: 'Immediately', description: 'Immediate relatives (spouse, parent, unmarried child under 21 of US citizen) have NO wait. Others have visa backlogs of 2-20+ years.', critical: true },
+      { step: 'US Citizen Spouse', time: '10-23 months total', description: 'File I-130 + I-485 together (if in US). Biometrics in 4-6 weeks. Interview in 8-14 months. Conditional green card if married <2 years.', critical: false },
+      { step: 'Green Card Holder Spouse (F2A)', time: '2-3 years', description: 'File I-130 first. Wait for priority date to become current. Then file I-485 or consular processing. Current wait: ~2 years.', critical: false },
+      { step: 'K-1 Fiancé Visa', time: '12-18 months', description: 'US citizen petitions with I-129F. Processing 10-14 months. Enter US, marry within 90 days, file for green card.', critical: false },
+      { step: 'Affidavit of Support', time: 'Required for all', description: 'Sponsor must file I-864 showing 125% of poverty guidelines. Can use joint sponsor if income insufficient.', critical: true },
+      { step: 'Conditional to Permanent', time: '21-24 months after approval', description: 'If married <2 years at approval, get 2-year conditional green card. File I-751 jointly 90 days before expiration.', critical: true },
+      { step: 'Citizenship Eligibility', time: '3 years as LPR', description: 'Spouses of US citizens can apply for citizenship after 3 years (vs. 5 years normally). Must remain married.', critical: false }
+    ],
+    ht: [
+      { step: 'Detèmine Kategori Ou', time: 'Imedyatman', description: 'Fanmi imedya (mari/madanm, paran, pitit ki poko marye ki gen mwens pase 21 an nan sitwayen ameriken) PA GEN tann. Lòt gen reta viza 2-20+ ane.', critical: true },
+      { step: 'Mari/Madanm Sitwayen Ameriken', time: '10-23 mwa total', description: 'Depoze I-130 + I-485 ansanm (si nan Etazini). Biyometrik nan 4-6 semèn. Entèvyou nan 8-14 mwa. Kat vèt kondisyonèl si marye <2 ane.', critical: false },
+      { step: 'Mari/Madanm Rezidan Pèmanan (F2A)', time: '2-3 ane', description: 'Depoze I-130 dabò. Tann pou dat priyorite vin aktyèl. Answit depoze I-485 oswa pwosesis konsilè. Tann aktyèl: ~2 ane.', critical: false },
+      { step: 'Viza Fiyanse K-1', time: '12-18 mwa', description: 'Sitwayen ameriken petisyone ak I-129F. Tretman 10-14 mwa. Antre Etazini, marye nan 90 jou, depoze pou kat vèt.', critical: false },
+      { step: 'Afidavi Sipò', time: 'Obligatwa pou tout', description: 'Garanti dwe depoze I-864 ki montre 125% gid povrete. Ka itilize ko-garanti si revni pa ase.', critical: true },
+      { step: 'Kondisyonèl a Pèmanan', time: '21-24 mwa apre apwobasyon', description: 'Si marye <2 ane nan apwobasyon, jwenn kat vèt kondisyonèl 2 ane. Depoze I-751 ansanm 90 jou anvan ekspirasyon.', critical: true },
+      { step: 'Elijibilite Sitwayènte', time: '3 ane kòm LPR', description: 'Mari/madanm sitwayen ameriken ka aplike pou sitwayènte apre 3 ane (olye 5 ane nòmalman). Dwe rete marye.', critical: false }
+    ]
+  },
   greenCard: {
     en: [
       { step: 'Maintain Your Status', time: 'Ongoing', description: 'Keep your green card valid, file taxes annually, report address changes within 10 days (AR-11). Don\'t stay outside US more than 6 months.', critical: false },

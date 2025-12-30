@@ -26,6 +26,14 @@ const formsByStatus = {
     { number: 'I-765', name: 'Application for Employment Authorization', url: 'https://www.uscis.gov/i-765' },
     { number: 'I-485', name: 'Application to Register Permanent Residence', url: 'https://www.uscis.gov/i-485' }
   ],
+  family: [
+    { number: 'I-130', name: 'Petition for Alien Relative', url: 'https://www.uscis.gov/i-130' },
+    { number: 'I-485', name: 'Application to Register Permanent Residence', url: 'https://www.uscis.gov/i-485' },
+    { number: 'I-864', name: 'Affidavit of Support', url: 'https://www.uscis.gov/i-864' },
+    { number: 'I-129F', name: 'Petition for Alien Fiancé(e)', url: 'https://www.uscis.gov/i-129f' },
+    { number: 'I-751', name: 'Petition to Remove Conditions on Residence', url: 'https://www.uscis.gov/i-751' },
+    { number: 'I-765', name: 'Application for Employment Authorization', url: 'https://www.uscis.gov/i-765' }
+  ],
   asylum: [
     { number: 'I-589', name: 'Application for Asylum', url: 'https://www.uscis.gov/i-589' },
     { number: 'I-765', name: 'Application for Employment Authorization', url: 'https://www.uscis.gov/i-765' },
@@ -59,7 +67,9 @@ const formsTranslations = {
     'Application to Replace Permanent Resident Card': 'Application to Replace Permanent Resident Card',
     'Petition to Remove Conditions on Residence': 'Petition to Remove Conditions on Residence',
     'Petition for Alien Relative': 'Petition for Alien Relative',
-    'Application for Travel Document': 'Application for Travel Document'
+    'Application for Travel Document': 'Application for Travel Document',
+    'Affidavit of Support': 'Affidavit of Support',
+    'Petition for Alien Fiancé(e)': 'Petition for Alien Fiancé(e)'
   },
   ht: {
     'Application for Asylum': 'Aplikasyon pou Azil',
@@ -74,7 +84,9 @@ const formsTranslations = {
     'Application to Replace Permanent Resident Card': 'Aplikasyon pou Ranplase Kat Rezidan Pèmanan',
     'Petition to Remove Conditions on Residence': 'Petisyon pou Retire Kondisyon sou Rezidans',
     'Petition for Alien Relative': 'Petisyon pou Fanmi Etranje',
-    'Application for Travel Document': 'Aplikasyon pou Dokiman Vwayaj'
+    'Application for Travel Document': 'Aplikasyon pou Dokiman Vwayaj',
+    'Affidavit of Support': 'Afidavi Sipò',
+    'Petition for Alien Fiancé(e)': 'Petisyon pou Fiyanse Etranje'
   }
 }
 

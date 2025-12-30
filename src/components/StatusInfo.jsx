@@ -408,6 +408,142 @@ const statusData = {
       ]
     }
   },
+  family: {
+    en: {
+      whatThisMeans: 'You are seeking immigration status through a family relationship or marriage. Family-based immigration is one of the primary ways to obtain a green card in the United States. Your path depends on your relationship to a US citizen or permanent resident.',
+      criticalWarning: null,
+      availableOptions: [
+        {
+          title: 'Marriage to US Citizen (Immediate Relative)',
+          description: 'Spouses of US citizens are "immediate relatives" with no visa wait time. This is one of the fastest paths to a green card.',
+          eligibility: 'Must be legally married to a US citizen. Marriage must be genuine (bona fide), not entered for immigration purposes.',
+          timeline: 'If in US legally: 10-23 months for green card. If abroad: 11-15 months for immigrant visa. Conditional 2-year green card if married less than 2 years.',
+          cost: '$535 (I-130) + $1,225 (I-485) + $85 biometrics = ~$1,845 if adjusting in US'
+        },
+        {
+          title: 'Marriage to Green Card Holder (F2A)',
+          description: 'Spouses of permanent residents fall under Family Preference category F2A. There is a wait time due to visa limits.',
+          eligibility: 'Must be legally married to a lawful permanent resident (green card holder).',
+          timeline: 'Currently 2-3 years wait for visa availability, then additional processing time.',
+          cost: '$535 (I-130) initially, then $1,225+ when visa becomes available'
+        },
+        {
+          title: 'K-1 Fiancé(e) Visa',
+          description: 'For couples where one is a US citizen engaged to a foreign national. Must marry within 90 days of entry to the US.',
+          eligibility: 'US citizen petitioner. Must have met in person within past 2 years. Must intend to marry within 90 days of K-1 holder entering US.',
+          timeline: 'K-1 processing: 10-14 months. After entry: 90 days to marry, then file for adjustment.',
+          cost: '$535 (I-129F) + $265 visa fee + $1,225 (I-485 after marriage) = ~$2,000+'
+        },
+        {
+          title: 'Parent of US Citizen (Immediate Relative)',
+          description: 'Parents of US citizens who are 21 or older are immediate relatives with no wait time.',
+          eligibility: 'Your US citizen child must be at least 21 years old.',
+          timeline: '10-23 months if adjusting in US. 11-15 months if through consular processing.',
+          cost: '$535 (I-130) + $1,225 (I-485) + $85 biometrics = ~$1,845'
+        },
+        {
+          title: 'Child of US Citizen (Immediate Relative)',
+          description: 'Unmarried children under 21 of US citizens are immediate relatives.',
+          eligibility: 'Must be unmarried and under 21. Includes biological, step, and adopted children.',
+          timeline: '10-23 months for green card.',
+          cost: '$535 (I-130) + $1,225 (I-485) + $85 biometrics = ~$1,845'
+        },
+        {
+          title: 'Siblings & Adult Children (Family Preference)',
+          description: 'Brothers/sisters and married/adult children of US citizens have longer waits.',
+          eligibility: 'F1: Unmarried adult children of USC. F3: Married children of USC. F4: Siblings of USC (must be 21+).',
+          timeline: 'WARNING: F4 (siblings) for most countries: 15-23 YEARS wait. F1/F3: 7-15 years.',
+          cost: '$535 (I-130), then fees when visa available (years later)'
+        }
+      ],
+      stepByStep: [
+        { step: 1, action: 'Determine your relationship category', details: 'Immediate relatives (spouse, parent, unmarried child under 21 of USC) have no wait. Others face years of waiting.' },
+        { step: 2, action: 'Gather evidence of relationship', details: 'Marriage certificate, birth certificates, photos together, joint finances, shared address proof.' },
+        { step: 3, action: 'File Form I-130 (Petition for Alien Relative)', details: 'The US citizen or green card holder files this petition to establish the qualifying relationship.' },
+        { step: 4, action: 'Wait for I-130 approval', details: 'USCIS reviews and approves the petition. For immediate relatives, can file I-485 concurrently.' },
+        { step: 5, action: 'File I-485 or attend consular interview', details: 'If in US legally: adjust status with I-485. If abroad: attend visa interview at US consulate.' },
+        { step: 6, action: 'Attend biometrics and interview', details: 'USCIS will schedule biometrics. Marriage-based cases typically require an interview.' }
+      ],
+      requirements: [
+        'Marriage certificate (if married)',
+        'Birth certificates showing relationship',
+        'Passport and passport photos (2x2)',
+        'I-94 arrival record',
+        'Evidence of bona fide marriage (photos, joint accounts, leases)',
+        'Affidavit of Support (I-864)',
+        'Tax returns of petitioner (3 years)',
+        'Medical examination (I-693)',
+        'Police clearances'
+      ]
+    },
+    ht: {
+      whatThisMeans: 'Ou ap chèche estati imigrasyon atravè yon relasyon fanmi oswa maryaj. Imigrasyon ki baze sou fanmi se youn nan prensipal fason pou jwenn yon kat vèt nan Etazini. Chemen ou depann de relasyon ou ak yon sitwayen ameriken oswa rezidan pèmanan.',
+      criticalWarning: null,
+      availableOptions: [
+        {
+          title: 'Maryaj ak Sitwayen Ameriken (Fanmi Imedya)',
+          description: 'Mari/madanm sitwayen ameriken yo se "fanmi imedya" san tan tann pou viza. Sa a se youn nan chemen ki pi rapid pou yon kat vèt.',
+          eligibility: 'Dwe marye legalman ak yon sitwayen ameriken. Maryaj la dwe otantik (bona fide), pa fèt pou rezon imigrasyon.',
+          timeline: 'Si nan Etazini legalman: 10-23 mwa pou kat vèt. Si aletranje: 11-15 mwa pou viza imigran. Kat vèt kondisyonèl 2 ane si marye mwens pase 2 ane.',
+          cost: '$535 (I-130) + $1,225 (I-485) + $85 biyometrik = ~$1,845 si ajiste nan Etazini'
+        },
+        {
+          title: 'Maryaj ak Moun ki gen Kat Vèt (F2A)',
+          description: 'Mari/madanm rezidan pèmanan yo tonbe anba kategori Preferans Fanmi F2A. Gen tan tann akòz limit viza.',
+          eligibility: 'Dwe marye legalman ak yon rezidan pèmanan legal (moun ki gen kat vèt).',
+          timeline: 'Kounye a 2-3 ane tann pou viza disponib, answit tan tretman adisyonèl.',
+          cost: '$535 (I-130) an premye, answit $1,225+ lè viza vin disponib'
+        },
+        {
+          title: 'Viza Fiyanse K-1',
+          description: 'Pou koup kote youn se sitwayen ameriken ki angaje ak yon etranje. Dwe marye nan 90 jou apre antre Etazini.',
+          eligibility: 'Petisyonè sitwayen ameriken. Dwe te rankontre an pèsòn nan 2 dènye ane. Dwe gen entansyon marye nan 90 jou apre moun ki gen K-1 la antre Etazini.',
+          timeline: 'Tretman K-1: 10-14 mwa. Apre antre: 90 jou pou marye, answit depoze pou ajisteman.',
+          cost: '$535 (I-129F) + $265 frè viza + $1,225 (I-485 apre maryaj) = ~$2,000+'
+        },
+        {
+          title: 'Paran Sitwayen Ameriken (Fanmi Imedya)',
+          description: 'Paran sitwayen ameriken ki gen 21 an oswa plis se fanmi imedya san tan tann.',
+          eligibility: 'Pitit sitwayen ameriken ou dwe gen omwen 21 an.',
+          timeline: '10-23 mwa si ajiste nan Etazini. 11-15 mwa si atravè tretman konsilè.',
+          cost: '$535 (I-130) + $1,225 (I-485) + $85 biyometrik = ~$1,845'
+        },
+        {
+          title: 'Pitit Sitwayen Ameriken (Fanmi Imedya)',
+          description: 'Timoun ki poko marye ki gen mwens pase 21 an ki gen paran sitwayen ameriken se fanmi imedya.',
+          eligibility: 'Dwe poko marye epi gen mwens pase 21 an. Gen ladan timoun byolojik, bòpè/bèlmè, ak adopte.',
+          timeline: '10-23 mwa pou kat vèt.',
+          cost: '$535 (I-130) + $1,225 (I-485) + $85 biyometrik = ~$1,845'
+        },
+        {
+          title: 'Frè/Sè & Pitit Adilt (Preferans Fanmi)',
+          description: 'Frè/sè ak timoun marye/adilt sitwayen ameriken gen tan tann pi long.',
+          eligibility: 'F1: Pitit adilt ki poko marye USC. F3: Pitit marye USC. F4: Frè/sè USC (dwe gen 21+).',
+          timeline: 'AVÈTISMAN: F4 (frè/sè) pou pifò peyi: 15-23 ANE tann. F1/F3: 7-15 ane.',
+          cost: '$535 (I-130), answit frè lè viza disponib (ane apre)'
+        }
+      ],
+      stepByStep: [
+        { step: 1, action: 'Detèmine kategori relasyon ou', details: 'Fanmi imedya (mari/madanm, paran, timoun ki poko marye ki gen mwens pase 21 an USC) pa gen tann. Lòt yo fè fas a ane tann.' },
+        { step: 2, action: 'Rasanble prèv relasyon', details: 'Sètifika maryaj, sètifika nesans, foto ansanm, finans konjwen, prèv adrès pataje.' },
+        { step: 3, action: 'Depoze Fòm I-130 (Petisyon pou Fanmi Etranje)', details: 'Sitwayen ameriken oswa moun ki gen kat vèt la depoze petisyon sa a pou etabli relasyon ki kalifye.' },
+        { step: 4, action: 'Tann apwobasyon I-130', details: 'USCIS revize epi apwouve petisyon an. Pou fanmi imedya, ka depoze I-485 an menm tan.' },
+        { step: 5, action: 'Depoze I-485 oswa asiste entèvyou konsilè', details: 'Si nan Etazini legalman: ajiste estati ak I-485. Si aletranje: asiste entèvyou viza nan konsila ameriken.' },
+        { step: 6, action: 'Asiste biyometrik ak entèvyou', details: 'USCIS pral pwograme biyometrik. Ka ki baze sou maryaj tipikman mande yon entèvyou.' }
+      ],
+      requirements: [
+        'Sètifika maryaj (si marye)',
+        'Sètifika nesans ki montre relasyon',
+        'Paspo ak foto paspo (2x2)',
+        'Dosye arive I-94',
+        'Prèv maryaj otantik (foto, kont konjwen, kontra lwaye)',
+        'Afidavit Sipò (I-864)',
+        'Deklarasyon taks petisyonè (3 ane)',
+        'Egzamen medikal (I-693)',
+        'Otorisasyon polis'
+      ]
+    }
+  },
   tps: {
     en: {
       whatThisMeans: 'You have Temporary Protected Status (TPS) for Haiti. TPS has allowed you to live and work legally in the US temporarily due to conditions in Haiti.',
