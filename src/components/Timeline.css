@@ -1,0 +1,258 @@
+.timeline {
+  margin-bottom: 40px;
+}
+
+.timeline h2 {
+  font-size: 2rem;
+  color: #1a1a2e;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  border-bottom: 4px solid transparent;
+  border-image: linear-gradient(90deg, #00209F 0%, #D21034 100%) 1;
+}
+
+.timeline-disclaimer {
+  font-size: 0.9rem;
+  color: #666;
+  font-style: italic;
+  margin-bottom: 25px;
+  padding: 10px 15px;
+  background: #f8f9fa;
+  border-radius: 8px;
+  border-left: 3px solid #667eea;
+}
+
+.dark-mode .timeline-disclaimer {
+  background: #2d3748;
+  color: #a0aec0;
+}
+
+.timeline-container {
+  position: relative;
+  padding-left: 40px;
+}
+
+.timeline-container::before {
+  content: '';
+  position: absolute;
+  left: 20px;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background: linear-gradient(180deg, #00209F 0%, #D21034 100%);
+  border-radius: 2px;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.timeline-item.critical {
+  margin-bottom: 35px;
+}
+
+.timeline-marker {
+  position: absolute;
+  left: -40px;
+  top: 0;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.marker-number {
+  width: 42px;
+  height: 42px;
+  background: linear-gradient(135deg, #00209F 0%, #0033cc 100%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  font-size: 1.1rem;
+  box-shadow: 0 4px 15px rgba(0, 32, 159, 0.35);
+}
+
+.marker-number.critical {
+  background: linear-gradient(135deg, #ff6b6b 0%, #ee5a5a 100%);
+  box-shadow: 0 4px 12px rgba(238, 90, 90, 0.4);
+  font-size: 1.3rem;
+  animation: pulse-critical 2s infinite;
+}
+
+@keyframes pulse-critical {
+  0%, 100% {
+    box-shadow: 0 4px 12px rgba(238, 90, 90, 0.4);
+  }
+  50% {
+    box-shadow: 0 4px 20px rgba(238, 90, 90, 0.7);
+  }
+}
+
+.timeline-content {
+  flex: 1;
+  background: white;
+  border: 2px solid #e9ecef;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.timeline-item.critical .timeline-content {
+  border-color: #ff6b6b;
+  background: linear-gradient(135deg, #fff5f5 0%, #ffe8e8 100%);
+  box-shadow: 0 4px 15px rgba(238, 90, 90, 0.15);
+}
+
+.dark-mode .timeline-item.critical .timeline-content {
+  background: linear-gradient(135deg, #3d1f1f 0%, #4a2020 100%);
+  border-color: #e53e3e;
+}
+
+.timeline-content:hover {
+  border-color: #667eea;
+  box-shadow: 0 4px 16px rgba(102, 126, 234, 0.15);
+  transform: translateX(5px);
+}
+
+.timeline-item.critical .timeline-content:hover {
+  border-color: #ff4444;
+  box-shadow: 0 6px 20px rgba(238, 90, 90, 0.25);
+}
+
+.dark-mode .timeline-content {
+  background: #2d3748;
+  border-color: #4a5568;
+}
+
+.timeline-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.timeline-header h3 {
+  font-size: 1.3rem;
+  color: #00209F;
+  font-weight: 700;
+  margin: 0;
+}
+
+.timeline-item.critical .timeline-header h3 {
+  color: #c0392b;
+}
+
+.dark-mode .timeline-item.critical .timeline-header h3 {
+  color: #fc8181;
+}
+
+.dark-mode .timeline-header h3 {
+  color: #90cdf4;
+}
+
+.timeline-time {
+  background: linear-gradient(135deg, #e8f0ff 0%, #f0e8ff 100%);
+  color: #00209F;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.timeline-time.critical {
+  background: linear-gradient(135deg, #ff6b6b 0%, #ee5a5a 100%);
+  color: white;
+}
+
+.dark-mode .timeline-time {
+  background: #1a202c;
+  color: #90cdf4;
+}
+
+.dark-mode .timeline-time.critical {
+  background: linear-gradient(135deg, #c0392b 0%, #a93226 100%);
+}
+
+.timeline-description {
+  color: #555;
+  line-height: 1.6;
+  font-size: 1.05rem;
+  margin: 0;
+}
+
+.timeline-item.critical .timeline-description {
+  color: #444;
+  font-weight: 500;
+}
+
+.dark-mode .timeline-description {
+  color: #cbd5e0;
+}
+
+.dark-mode .timeline-item.critical .timeline-description {
+  color: #fed7d7;
+}
+
+.dark-mode .timeline h2 {
+  color: #f7fafc;
+}
+
+@media (max-width: 768px) {
+  .timeline h2 {
+    font-size: 1.6rem;
+  }
+
+  .timeline-container {
+    padding-left: 30px;
+  }
+
+  .timeline-container::before {
+    left: 15px;
+  }
+
+  .timeline-marker {
+    left: -30px;
+  }
+
+  .marker-number {
+    width: 36px;
+    height: 36px;
+    font-size: 1rem;
+  }
+
+  .timeline-content {
+    padding: 15px;
+  }
+
+  .timeline-header h3 {
+    font-size: 1.1rem;
+  }
+
+  .timeline-disclaimer {
+    font-size: 0.85rem;
+    padding: 8px 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .timeline-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .timeline-time {
+    font-size: 0.8rem;
+    padding: 4px 10px;
+  }
+}

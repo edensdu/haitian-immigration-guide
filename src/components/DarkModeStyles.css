@@ -1,0 +1,523 @@
+/* Global dark mode styles for all components */
+
+/* Base text color for dark mode */
+.dark-mode,
+.dark-mode body,
+.dark-mode .app-main {
+  color: #e0e0e0 !important;
+}
+
+/* Headings */
+.dark-mode .status-info h2,
+.dark-mode .timeline h2,
+.dark-mode .resources h2,
+.dark-mode .faq h2,
+.dark-mode .forms-finder h2,
+.dark-mode .cost-estimator h2,
+.dark-mode .office-finder h2,
+.dark-mode .document-checklist h2,
+.dark-mode .important-dates h2,
+.dark-mode .status-assessment h2 {
+  color: #e0e0e0 !important;
+  border-bottom-color: #667eea;
+}
+
+.dark-mode .info-section,
+.dark-mode .timeline-content,
+.dark-mode .resource-category,
+.dark-mode .faq-item,
+.dark-mode .form-item,
+.dark-mode .cost-breakdown,
+.dark-mode .office-item,
+.dark-mode .checklist-item,
+.dark-mode .date-item {
+  background: #2a2a2a;
+  border-color: #3a3a3a;
+  color: #e0e0e0;
+}
+
+.dark-mode .info-section h3,
+.dark-mode .resource-category h3,
+.dark-mode .faq-question,
+.dark-mode .form-header h3,
+.dark-mode .office-item h3,
+.dark-mode .date-content h3 {
+  color: #667eea;
+}
+
+.dark-mode .info-text,
+.dark-mode .info-list li,
+.dark-mode .resource-description,
+.dark-mode .faq-answer p,
+.dark-mode .timeline-description,
+.dark-mode .date-value {
+  color: #b0b0b0;
+}
+
+.dark-mode .document-checklist,
+.dark-mode .important-dates,
+.dark-mode .cost-estimator {
+  background: #2a2a2a;
+  border-color: #3a3a3a;
+}
+
+.dark-mode .progress-bar {
+  background: #3a3a3a;
+}
+
+.dark-mode .status-option {
+  background: #2a2a2a;
+  border-color: #3a3a3a;
+  color: #e0e0e0;
+}
+
+.dark-mode .status-option:hover {
+  background: #333;
+  border-color: #667eea;
+}
+
+.dark-mode .back-button,
+.dark-mode .share-button {
+  box-shadow: 0 2px 8px rgba(102, 126, 234, 0.3);
+}
+
+.dark-mode .zip-input,
+.dark-mode .date-input {
+  background: #2a2a2a;
+  border-color: #3a3a3a;
+  color: #e0e0e0;
+}
+
+.dark-mode .zip-input:focus,
+.dark-mode .date-input:focus {
+  border-color: #667eea;
+  background: #333;
+}
+
+/* All text elements in dark mode */
+.dark-mode .option-text,
+.dark-mode .document-name,
+.dark-mode .checklist-header h2,
+.dark-mode .checklist-desc,
+.dark-mode .progress-text,
+.dark-mode .date-label,
+.dark-mode .office-name,
+.dark-mode .form-header h3,
+.dark-mode .cost-label,
+.dark-mode .cost-value,
+.dark-mode .total-label,
+.dark-mode .total-value,
+.dark-mode .office-details p,
+.dark-mode .detail-text,
+.dark-mode .detail-label {
+  color: #e0e0e0 !important;
+}
+
+/* Subtle text */
+.dark-mode .assessment-subtitle,
+.dark-mode .checklist-desc,
+.dark-mode .progress-text,
+.dark-mode .date-value,
+.dark-mode .office-details p,
+.dark-mode .detail-text,
+.dark-mode .forms-desc,
+.dark-mode .cost-desc,
+.dark-mode .office-desc,
+.dark-mode .faq-subtitle {
+  color: #b0b0b0 !important;
+}
+
+/* Backgrounds for white elements */
+.dark-mode .status-option {
+  background: #2a2a2a !important;
+  border-color: #3a3a3a !important;
+  color: #e0e0e0 !important;
+}
+
+.dark-mode .checklist-item {
+  background: #2a2a2a !important;
+  border-color: #3a3a3a !important;
+}
+
+.dark-mode .checklist-item .document-name {
+  color: #e0e0e0 !important;
+}
+
+.dark-mode .form-item {
+  background: #2a2a2a !important;
+  border-color: #3a3a3a !important;
+}
+
+.dark-mode .cost-breakdown {
+  background: #2a2a2a !important;
+}
+
+.dark-mode .office-item {
+  background: #2a2a2a !important;
+  border-color: #3a3a3a !important;
+}
+
+/* Links in dark mode */
+.dark-mode .resource-link,
+.dark-mode .resource-name,
+.dark-mode .link {
+  color: #667eea !important;
+}
+
+.dark-mode .resource-link:hover {
+  color: #7c8ef5 !important;
+}
+
+/* Badges and labels */
+.dark-mode .form-number,
+.dark-mode .office-type-badge,
+.dark-mode .time-badge {
+  background: #667eea !important;
+  color: #fff !important;
+}
+
+/* Ensure all paragraphs and text are visible */
+.dark-mode p,
+.dark-mode span:not(.option-icon):not(.option-arrow):not(.check-icon):not(.faq-icon-text):not(.delete-text) {
+  color: #e0e0e0 !important;
+}
+
+.dark-mode .no-dates,
+.dark-mode .no-dates-text,
+.dark-mode .no-results {
+  color: #b0b0b0 !important;
+}
+
+/* Timeline specific */
+.dark-mode .timeline-header h3,
+.dark-mode .step {
+  color: #667eea !important;
+}
+
+.dark-mode .timeline-time {
+  color: #667eea !important;
+}
+
+/* Resource items */
+.dark-mode .resource-item {
+  background: #2a2a2a !important;
+  border-color: #3a3a3a !important;
+}
+
+.dark-mode .resource-name {
+  color: #e0e0e0 !important;
+}
+
+/* Form buttons */
+.dark-mode .form-button.secondary {
+  background: #2a2a2a !important;
+  border-color: #667eea !important;
+  color: #667eea !important;
+}
+
+.dark-mode .form-button.secondary:hover {
+  background: #333 !important;
+}
+
+/* Cost estimator */
+.dark-mode .cost-note {
+  color: #667eea !important;
+}
+
+.dark-mode .disclaimer-text {
+  color: #856404 !important;
+}
+
+.dark-mode .cost-disclaimer {
+  background: #3a2a00 !important;
+  border-color: #ffc107 !important;
+}
+
+/* News component dark mode */
+.dark-mode .immigration-news h2 {
+  color: #e0e0e0 !important;
+  border-bottom-color: #667eea;
+}
+
+.dark-mode .news-item {
+  background: #2a2a2a !important;
+  border-color: #3a3a3a !important;
+}
+
+.dark-mode .news-title {
+  color: #e0e0e0 !important;
+}
+
+.dark-mode .news-summary {
+  color: #b0b0b0 !important;
+}
+
+.dark-mode .news-date {
+  color: #b0b0b0 !important;
+}
+
+.dark-mode .news-footer {
+  border-top-color: #3a3a3a !important;
+}
+
+.dark-mode .news-link {
+  color: #667eea !important;
+}
+
+.dark-mode .news-note {
+  background: #1a2a3a !important;
+  border-color: #2a4a5a !important;
+  color: #b0d0ff !important;
+}
+
+/* Language Toggle - Active button has white background, needs dark text */
+.dark-mode .language-toggle button.active {
+  background: white !important;
+  color: #333 !important;
+  border-color: white !important;
+}
+
+.dark-mode .language-toggle button {
+  color: #e0e0e0 !important;
+}
+
+/* FAQ Items - Ensure all text is visible */
+.dark-mode .faq-item {
+  background: #2a2a2a !important;
+  border-color: #3a3a3a !important;
+}
+
+.dark-mode .faq-question {
+  color: #e0e0e0 !important;
+}
+
+.dark-mode .faq-answer p {
+  color: #b0b0b0 !important;
+}
+
+.dark-mode .faq-icon {
+  background: #1a1a3a !important;
+}
+
+/* Form Items - All white backgrounds */
+.dark-mode .form-item {
+  background: #2a2a2a !important;
+  border-color: #3a3a3a !important;
+}
+
+.dark-mode .form-header h3 {
+  color: #e0e0e0 !important;
+}
+
+.dark-mode .form-button.secondary {
+  background: #2a2a2a !important;
+  color: #667eea !important;
+  border-color: #667eea !important;
+}
+
+/* News Items */
+.dark-mode .news-item {
+  background: #2a2a2a !important;
+  border-color: #3a3a3a !important;
+}
+
+.dark-mode .news-title {
+  color: #e0e0e0 !important;
+}
+
+.dark-mode .news-summary {
+  color: #b0b0b0 !important;
+}
+
+.dark-mode .news-date {
+  color: #b0b0b0 !important;
+}
+
+/* Office Items */
+.dark-mode .office-item {
+  background: #2a2a2a !important;
+  border-color: #3a3a3a !important;
+}
+
+.dark-mode .office-item h3 {
+  color: #e0e0e0 !important;
+}
+
+.dark-mode .office-details p {
+  color: #b0b0b0 !important;
+}
+
+.dark-mode .office-details strong {
+  color: #e0e0e0 !important;
+}
+
+.dark-mode .office-note {
+  background: #1a2a3a !important;
+  border-color: #2a4a5a !important;
+  color: #b0d0ff !important;
+}
+
+/* Cost Breakdown - White background */
+.dark-mode .cost-breakdown {
+  background: #2a2a2a !important;
+}
+
+.dark-mode .cost-item {
+  border-bottom-color: #3a3a3a !important;
+}
+
+.dark-mode .cost-label {
+  color: #e0e0e0 !important;
+}
+
+.dark-mode .cost-value {
+  color: #e0e0e0 !important;
+}
+
+.dark-mode .checkbox-label {
+  color: #e0e0e0 !important;
+}
+
+.dark-mode .total-label {
+  color: #e0e0e0 !important;
+}
+
+.dark-mode .total-value {
+  color: #667eea !important;
+}
+
+/* Date Items - White backgrounds */
+.dark-mode .date-form {
+  background: #2a2a2a !important;
+  border-color: #3a3a3a !important;
+}
+
+.dark-mode .date-item {
+  background: #2a2a2a !important;
+  border-color: #3a3a3a !important;
+}
+
+.dark-mode .date-item.upcoming {
+  background: #3a2a00 !important;
+  border-left-color: #ffc107 !important;
+}
+
+.dark-mode .date-content h3 {
+  color: #e0e0e0 !important;
+}
+
+.dark-mode .date-value {
+  color: #b0b0b0 !important;
+}
+
+.dark-mode .upcoming-badge {
+  background: #ffc107 !important;
+  color: #000 !important;
+}
+
+/* Checklist Items */
+.dark-mode .checklist-item {
+  background: #2a2a2a !important;
+  border-color: #3a3a3a !important;
+}
+
+.dark-mode .checklist-item:hover {
+  background: #333 !important;
+}
+
+.dark-mode .document-name {
+  color: #e0e0e0 !important;
+}
+
+/* Resource Links - White background */
+.dark-mode .resource-link {
+  background: #2a2a2a !important;
+  border-color: #3a3a3a !important;
+}
+
+.dark-mode .resource-link:hover {
+  background: #333 !important;
+}
+
+.dark-mode .resource-link strong {
+  color: #e0e0e0 !important;
+}
+
+.dark-mode .resource-description {
+  color: #b0b0b0 !important;
+}
+
+/* Timeline Content - White background */
+.dark-mode .timeline-content {
+  background: #2a2a2a !important;
+  border-color: #3a3a3a !important;
+}
+
+.dark-mode .timeline-description {
+  color: #b0b0b0 !important;
+}
+
+.dark-mode .timeline-time {
+  background: #1a1a3a !important;
+  color: #667eea !important;
+}
+
+/* Status Assessment - White backgrounds */
+.dark-mode .status-option {
+  background: #2a2a2a !important;
+  border-color: #3a3a3a !important;
+  color: #e0e0e0 !important;
+}
+
+.dark-mode .status-option:hover {
+  background: #333 !important;
+}
+
+.dark-mode .option-text {
+  color: #e0e0e0 !important;
+}
+
+/* Error/Warning boxes - Keep light but ensure dark text */
+.dark-mode .news-error,
+.dark-mode .office-error {
+  background: #3a1a1a !important;
+  border-color: #5a2a2a !important;
+  color: #ffb0b0 !important;
+}
+
+.dark-mode .completion-message {
+  background: #1a3a1a !important;
+  border-color: #2a5a2a !important;
+  color: #b0ffb0 !important;
+}
+
+/* Office Note - Light blue background needs dark text in dark mode */
+.dark-mode .office-note {
+  background: #1a2a3a !important;
+  border-color: #2a4a5a !important;
+  color: #b0d0ff !important;
+}
+
+.dark-mode .office-note p {
+  color: #b0d0ff !important;
+}
+
+/* Ensure all headings in white boxes are visible */
+.dark-mode .form-header h3,
+.dark-mode .office-item h3,
+.dark-mode .date-content h3,
+.dark-mode .news-title {
+  color: #e0e0e0 !important;
+}
+
+/* Cost disclaimer - yellow background needs dark text */
+.dark-mode .cost-disclaimer {
+  background: #3a2a00 !important;
+  border-color: #ffc107 !important;
+  color: #ffc107 !important;
+}
+
+.dark-mode .cost-disclaimer p {
+  color: #ffc107 !important;
+}
+

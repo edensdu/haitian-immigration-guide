@@ -1,0 +1,368 @@
+.status-info {
+  margin-bottom: 40px;
+}
+
+.status-info h2 {
+  font-size: 2rem;
+  color: #1a1a2e;
+  margin-bottom: 30px;
+  padding-bottom: 15px;
+  border-bottom: 4px solid transparent;
+  border-image: linear-gradient(90deg, #00209F 0%, #D21034 100%) 1;
+}
+
+.critical-warning {
+  background: linear-gradient(135deg, #ff6b6b 0%, #ee5a5a 100%);
+  color: white;
+  padding: 20px 25px;
+  border-radius: 12px;
+  margin-bottom: 25px;
+  border-left: 5px solid #c0392b;
+  box-shadow: 0 4px 15px rgba(238, 90, 90, 0.3);
+}
+
+.critical-warning p {
+  font-size: 1.15rem;
+  font-weight: 600;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.dark-mode .critical-warning {
+  background: linear-gradient(135deg, #c0392b 0%, #a93226 100%);
+}
+
+.info-section {
+  margin-bottom: 35px;
+  background: linear-gradient(135deg, #f8f9fa 0%, #fff 100%);
+  padding: 28px;
+  border-radius: 16px;
+  border-left: 5px solid #00209F;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.info-section h3 {
+  font-size: 1.4rem;
+  color: #00209F;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.info-text {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #555;
+}
+
+/* Detailed Options Cards */
+.options-detailed {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.option-card {
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  border: 1px solid #e9ecef;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.option-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
+}
+
+.dark-mode .option-card {
+  background: #2d3748;
+  border-color: #4a5568;
+}
+
+.option-card h4 {
+  font-size: 1.2rem;
+  color: #00209F;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.option-description {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.dark-mode .option-description {
+  color: #cbd5e0;
+}
+
+.option-details {
+  display: grid;
+  gap: 10px;
+  background: #f0f4ff;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.dark-mode .option-details {
+  background: #1a202c;
+}
+
+.option-detail {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.option-detail strong {
+  font-size: 0.85rem;
+  color: #667eea;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.option-detail span {
+  font-size: 0.95rem;
+  color: #444;
+  line-height: 1.5;
+}
+
+.dark-mode .option-detail span {
+  color: #e2e8f0;
+}
+
+/* Step by Step Guide */
+.step-by-step {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.step-item {
+  display: flex;
+  gap: 15px;
+  align-items: flex-start;
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.dark-mode .step-item {
+  background: #2d3748;
+}
+
+.step-number {
+  width: 38px;
+  height: 38px;
+  min-width: 38px;
+  background: linear-gradient(135deg, #00209F 0%, #D21034 100%);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 32, 159, 0.3);
+}
+
+.step-content {
+  flex: 1;
+}
+
+.step-content strong {
+  display: block;
+  font-size: 1.05rem;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.dark-mode .step-content strong {
+  color: #f7fafc;
+}
+
+.step-content p {
+  font-size: 0.95rem;
+  color: #666;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.dark-mode .step-content p {
+  color: #a0aec0;
+}
+
+/* Requirements List */
+.requirements-list {
+  display: grid;
+  gap: 8px;
+}
+
+.info-list {
+  list-style: none;
+  padding: 0;
+}
+
+.info-list li {
+  padding: 12px 0;
+  padding-left: 30px;
+  position: relative;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: #555;
+}
+
+.info-list li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: #667eea;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.info-list li:not(:last-child) {
+  border-bottom: 1px solid #e9ecef;
+}
+
+.dark-mode .info-list li {
+  color: #cbd5e0;
+  border-bottom-color: #4a5568;
+}
+
+/* Search Highlight */
+.search-highlight {
+  background: #ffeb3b;
+  padding: 2px 4px;
+  border-radius: 3px;
+  font-weight: 600;
+}
+
+.dark-mode .search-highlight {
+  background: #ffc107;
+  color: #000;
+}
+
+/* Haiti Specific Section */
+.haiti-specific {
+  background: linear-gradient(135deg, #fff3cd 0%, #ffe69c 100%);
+  border-left-color: #ffc107;
+}
+
+.haiti-specific.critical-warning {
+  background: linear-gradient(135deg, #ff6b6b 0%, #ee5a5a 100%);
+  border-left-color: #c0392b;
+}
+
+.dark-mode .haiti-specific {
+  background: linear-gradient(135deg, #3a2a00 0%, #4a3a00 100%);
+  border-left-color: #ffc107;
+}
+
+.haiti-note {
+  font-weight: 600;
+  color: #856404;
+}
+
+.dark-mode .haiti-note {
+  color: #ffc107;
+}
+
+/* Disclaimer Section */
+.disclaimer-section {
+  background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
+  border-left-color: #2196f3;
+}
+
+.dark-mode .disclaimer-section {
+  background: linear-gradient(135deg, #1a237e 0%, #0d47a1 100%);
+}
+
+.disclaimer {
+  font-size: 0.95rem;
+  color: #1565c0;
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+.dark-mode .disclaimer {
+  color: #90caf9;
+}
+
+/* Dark Mode Overrides */
+.dark-mode .status-info h2 {
+  color: #f7fafc;
+}
+
+.dark-mode .info-section {
+  background: #1a202c;
+  border-left-color: #667eea;
+}
+
+.dark-mode .info-section h3 {
+  color: #90cdf4;
+}
+
+.dark-mode .info-text {
+  color: #cbd5e0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .status-info h2 {
+    font-size: 1.6rem;
+  }
+
+  .info-section {
+    padding: 20px;
+  }
+
+  .info-section h3 {
+    font-size: 1.2rem;
+  }
+
+  .option-card {
+    padding: 15px;
+  }
+
+  .option-card h4 {
+    font-size: 1.1rem;
+  }
+
+  .step-item {
+    padding: 12px;
+  }
+
+  .step-number {
+    width: 30px;
+    height: 30px;
+    min-width: 30px;
+    font-size: 0.9rem;
+  }
+
+  .critical-warning {
+    padding: 15px 20px;
+  }
+
+  .critical-warning p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .option-details {
+    padding: 12px;
+  }
+
+  .step-item {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .step-number {
+    align-self: flex-start;
+  }
+}

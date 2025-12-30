@@ -1,0 +1,122 @@
+.status-assessment {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.status-assessment h2 {
+  font-size: 2.2rem;
+  color: #1a1a2e;
+  margin-bottom: 12px;
+  text-align: center;
+  font-weight: 700;
+}
+
+.assessment-subtitle {
+  text-align: center;
+  color: #666;
+  margin-bottom: 40px;
+  font-size: 1.15rem;
+}
+
+.status-options {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 16px;
+}
+
+.status-option {
+  background: white;
+  border: 2px solid #e9ecef;
+  border-radius: 16px;
+  padding: 24px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  text-align: left;
+  font-size: 1.05rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.status-option::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  background: linear-gradient(180deg, #00209F 0%, #D21034 100%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.status-option:hover {
+  border-color: #00209F;
+  background: linear-gradient(135deg, #f8f9ff 0%, #fff5f6 100%);
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(0, 32, 159, 0.15);
+}
+
+.status-option:hover::before {
+  opacity: 1;
+}
+
+.status-option:active {
+  transform: translateY(-2px);
+}
+
+.option-icon {
+  font-size: 2.2rem;
+  flex-shrink: 0;
+  width: 56px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #f0f4ff 0%, #fff0f2 100%);
+  border-radius: 14px;
+}
+
+.option-text {
+  flex: 1;
+  font-weight: 600;
+  color: #1a1a2e;
+  line-height: 1.4;
+}
+
+.option-arrow {
+  color: #00209F;
+  font-size: 1.5rem;
+  opacity: 0;
+  transition: all 0.3s ease;
+  transform: translateX(-10px);
+}
+
+.status-option:hover .option-arrow {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+@media (max-width: 768px) {
+  .status-assessment h2 {
+    font-size: 1.7rem;
+  }
+
+  .status-options {
+    grid-template-columns: 1fr;
+  }
+
+  .status-option {
+    padding: 18px 20px;
+    font-size: 1rem;
+  }
+
+  .option-icon {
+    font-size: 1.8rem;
+    width: 48px;
+    height: 48px;
+  }
+}
+

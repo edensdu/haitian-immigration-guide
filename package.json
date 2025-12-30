@@ -1,0 +1,24 @@
+{
+  "name": "haitian-immigration-guide",
+  "version": "1.0.0",
+  "description": "A simple app to help Haitians understand the US immigration process",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "start": "expo start",
+    "start:ios": "expo start --ios",
+    "start:android": "expo start --android",
+    "start:web": "expo start --web"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.2.1",
+    "vite": "^5.0.8"
+  }
+}
+
